@@ -1,0 +1,136 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+coverage.txt
+coverage.html
+*.coverprofile
+
+# Dependency directories
+vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Build output
+/bin/
+/dist/
+/build/
+/out/
+*.bin
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Configuration overrides (keep templates)
+configs/application-local.yml
+configs/application-dev.yml
+configs/application-*.local.yml
+
+# Secrets and credentials
+**/secrets/
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+credentials.json
+service-account.json
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Debug files
+debug
+__debug_bin
+*.pprof
+
+# Air (live reload) temporary files
+tmp/
+.air.toml
+
+# Docker
+.dockerignore
+
+# Kubernetes local configs
+*.kubeconfig
+kubeconfig-*
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# CI/CD artifacts
+.gitlab-ci-local/
+.github-actions-local/
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Documentation build artifacts
+docs/_build/
+site/
+
+# Profiling data
+cpu.prof
+mem.prof
+trace.out
+
+# Wire (dependency injection) generated files
+wire_gen.go
+
+# Mock generated files (if using mockgen)
+**/mocks/*_mock.go
+
+# Local development scripts
+local-*.sh
+dev-*.sh
+
+# Node modules (if using frontend tools)
+node_modules/
+
+# Compiled protocol buffers
+*.pb.go
+
+# Generated code markers
+# zz_generated.*
