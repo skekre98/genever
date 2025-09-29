@@ -1,0 +1,14 @@
+app:
+  name: orders
+  version: 0.1.0
+server:
+  addr: ":8080"
+  readTimeout: 5s
+  writeTimeout: 10s
+  idleTimeout: 60s
+observability:
+  metrics:
+    enabled: true
+    path: /actuator/metrics
+actuator:
+  basePath: /actuator
