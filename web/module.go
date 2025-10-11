@@ -64,9 +64,9 @@ func (m *webModule) Configure(c core.Container) error {
 	srv := &http.Server{
 		Addr:         cfg.Server.Addr,
 		Handler:      r,
-		ReadTimeout:  time.Duration(cfg.Server.ReadTimeout.Value),
-		WriteTimeout: time.Duration(cfg.Server.WriteTimeout.Value),
-		IdleTimeout:  time.Duration(cfg.Server.IdleTimeout.Value),
+		ReadTimeout:  cfg.Server.ReadTimeout,
+		WriteTimeout: cfg.Server.WriteTimeout,
+		IdleTimeout:  cfg.Server.IdleTimeout,
 	}
 
 	core.Put[*gin.Engine](c, r)
